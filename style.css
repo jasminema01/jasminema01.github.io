@@ -1,0 +1,441 @@
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    animation: fadeInAnimation ease 1s;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    overflow-x: hidden;
+  }
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    background-color: gainsboro;
+  }
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(0px,3em);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px,0px);
+     }
+}
+.underline {
+    text-decoration: underline;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 35%;
+    min-height: calc(100vh - footer height); /* Adjust 80px to the footer height */
+    padding-bottom: 20px; /* Ensure spacing from footer */
+  }
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+#home {
+    text-align: left; /* Align all text to the left */
+    padding: 20px; /* Optional padding for better spacing */
+}
+
+ul {
+    list-style-type: disc; /* Ensures the list has bullet points */
+    padding-left: 20px; /* Adds left padding to the list */
+}
+
+h3, h4 {
+    font-weight: bold; /* Optional for better visual hierarchy */
+}
+
+#home, #education, #experience, #project, #skills {
+    margin-bottom: 10px;  /* Decrease this number to reduce space */
+    margin-top: 20px;
+  }
+section h3{
+    padding-bottom: 0.8em;
+}
+
+img{
+    pointer-events: none;
+}
+
+.picture{
+    height: 30vw;
+}
+
+nav{
+    position: fixed;
+    right: 15%;
+    top: 20em;
+    font-weight: 500;
+}
+
+nav ul li {
+    padding: 0.2em;
+    font-size: 2.5em;
+    text-align: right;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 3em;
+}
+
+h4{
+    font-size: 2.5em;
+}
+
+h5{
+    font-size: 1.8em;
+}
+
+h6{
+    font-size: 1.3em;
+    margin-bottom: 0.2em;
+}
+
+p{
+    font-size: 1.5em;
+    word-break:normal;
+    margin-bottom: 3%;
+}
+
+li{
+    list-style: none;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+    -webkit-transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -ms-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .2s ease;
+}
+
+a:hover{
+    color: #B49C68;
+}
+
+section li{
+    font-size: 2.5em;
+}
+
+section li a{
+        font-size: 2em;
+}
+
+.card{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2vw;
+    margin: 1vw;
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vw 2vw 1vw 4vw;
+    box-shadow: 10px 10px;
+    background-color: white;
+    
+}
+
+.card .wide{
+    height: 4vw;
+    width: fit-content;
+    overflow: hidden;
+    object-fit:fill;
+}
+
+.card p{
+    font-size: 1vw;
+    margin: 5px 0;
+}
+.squared-word {
+    display: inline-block;        /* Keeps the word inline but also allows styling */
+    padding: 5px 5px;            /* Small padding around each word */
+    border: 1px solid black;      /* Thin border around the word */
+    border-radius: 4px;           /* Optional: makes the corners slightly rounded */
+    font-size: 10px;              /* Adjust text size to your preference */
+    margin-right: 5px;           /* Space between the words */
+    margin-bottom: 1px;
+  }
+.card h5, .card h2 {
+    margin: 0;  /* Removes any default margin from both h5 and h2 */
+}
+
+.card h5 {
+    margin-bottom: 5px;  /* Adjusts space between h5 and h2 */
+}
+
+.card h2 {
+    margin-top: 0;  /* Prevents extra margin at the top of h2 */
+    display: flex;
+    gap: 10px;  /* Controls the space between the squared words */
+}
+
+.card h6 {
+    margin-top: 1px;  /* Adjusts space between h5 and h2 */
+}
+
+/* Footer styling */
+footer{
+    text-align: center;
+    margin: 1em;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Container for Social Links */
+.social-links-container {
+    display: flex;
+    justify-content: flex-start; /* Align links to the left */
+    margin-left: 20px; /* Adjust left margin to match alignment with text above */
+    margin-top: 50px; /* Add space from text above */
+  }
+  
+  /* Social Links Styling */
+  .social-links {
+    display: flex; /* Arrange items horizontally */
+    gap: 30px; /* Space between each link */
+    margin-top: 20px; /* Adjust this value to add space */
+  }
+  
+  .social-links a {
+    display: flex; /* Align icon and text together */
+    align-items: center; /* Vertically align icon and text */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Default link color */
+    font-size: 25px; /* Adjust text size */
+    font-family: Arial, sans-serif; /* Font style */
+    font-weight: 600; /* Slightly bold text */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+  }
+  
+  /* Icons */
+  .social-links a img {
+    width: 24px; /* Adjust icon size */
+    height: 24px; /* Keep aspect ratio */
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  /* Hover Effect */
+  .social-links a:hover {
+    color: #0073b1; /* Change text color on hover */
+  }
+  
+.exp{
+    display: flexbox;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1em;
+}
+
+.exp-icon{
+    height:6em;
+    margin: 0 0.75em;
+}
+
+@media screen and (max-width: 1300px) {
+    
+    .picture{
+        height: 40vw;
+    }
+
+    nav ul li {
+        font-size: 2em;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+    
+    h2{
+        font-size: 2.3em;
+        font-weight: lighter;
+    }
+    
+    h3{
+        font-size: 2em;
+    }
+    
+    h4{
+        font-size: 1.7em;
+    }
+    
+    h5{
+        font-size: 1.5em;
+        margin-bottom: 0.5;
+    }
+
+    h6{
+        font-size: 0.8em;
+    }
+    
+    p{
+        font-size: 1.3em;
+    }
+
+    section li{
+        font-size: 2em;
+        margin: 0.5em;
+    }
+    
+    section li a{
+            font-size: 2em;
+    }
+
+    .card{
+        margin: 2vw;
+        min-width: 40vw;
+    }
+
+    .card p{
+        font-size: 1.3vw;
+    }
+    @media (max-width: 768px) {
+        .social-links {
+          gap: 30px; 
+        }
+        .social-links a {
+          font-size: 20px; /
+        }
+        .social-links a img {
+          width: 24px; 
+          height: 24px;
+        }
+      }
+    @media screen and (max-width: 950px) {
+    
+        body{
+            width: 100vw;
+            max-width: 100%;
+        }
+
+        nav{
+            font-size: 0;
+        }
+
+        .content{
+            margin-left: 10%;
+            margin-right: 22%;
+            text-align: left; 
+
+        section{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:start;
+            align-items:baseline;
+            padding-top: 1em;
+            margin-top: 2em;
+        }
+
+        #home{
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            text-align: left; 
+        }
+
+        #education{
+            margin-bottom: 6em;
+        }
+
+        .picture{
+            height: 60vw;
+        }
+
+        nav ul li {
+            font-size: 1.1em;
+        }
+
+        h1{
+            font-size: 7vw;
+        }
+        
+        h2{
+            font-size: 5vw;
+            font-weight: lighter;
+        }
+        
+        h3{
+            font-size: 2.5em;
+        }
+        
+        h4{
+            font-size: 1.2em;
+        }
+        
+        h5{
+            font-size: 1.2em;
+        }
+
+        h6{
+            font-size: .7em;
+        }
+        
+        p{
+            font-size: 1em;
+        }
+    
+        section li{
+            font-size: 1.3em; 
+        }
+        
+        section li a{
+                font-size: 2em;
+                margin: 0.7em 0;
+            }
+
+        .card{
+            margin: 3vw;
+            width: 65vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+        }
+    
+
+        .card .wide{
+            width: auto;
+            height: auto;
+            overflow:hidden;
+            object-fit:cover;
+        }
+
+        .card p{
+            font-size: 0.8em;
+        }
+    }
+}
+}

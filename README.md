@@ -1,1 +1,1 @@
-# jasminema01.github.io
+Hi! My name is Jasmine, and I'm studying computer science and data science at UC Berkeley! Find out more on me on my website and linkedin!
