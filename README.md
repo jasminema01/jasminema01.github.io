@@ -1,1 +1,1 @@
-Hi! My name is Jasmine, and I'm studying computer science and data science at UC Berkeley! Find out more on me on [my website](https://jasminema01.github.io/) and [linkedin](https://www.linkedin.com/in/jasmine-ma10/)! 🎧✍🏼⋆˙⟡ ♡✎
+Hi! My name is Jasmine, and I'm studying computer science and data science at UC Berkeley! Find out more about me on [my website](https://jasminema01.github.io/) and [linkedin](https://www.linkedin.com/in/jasmine-ma10/)! 🎧✍🏼⋆˙⟡ ♡✎
